@@ -1,0 +1,58 @@
+.about {
+  background-color: var(--bg-page);
+  min-height: 100vh;
+  padding: 80px 0;
+  user-select: none;
+    .about-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    .about-title {
+    font-family: "SuperMellow";
+    font-size: 100px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--text-title);
+}
+    .about-subtitle {
+    margin-top: 24px;
+    font-family: "Paperlogy", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 50px;
+    color: #2e2e2e;
+}
+}
+.about-keywords{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Paperlogy", sans-serif;
+    .keywords{
+        width: 130px;
+        height: 48px;
+        margin: 20px;
+        padding: 15px;
+        text-align: center;
+        background-color: var(--bg-card);
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+.about-description{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: "Paperlogy", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+}

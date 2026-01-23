@@ -1,0 +1,28 @@
+.nav{
+    position: absolute;
+    top: 0;
+    right: 9px;
+    z-index: 10;
+    padding: 20px 30px;
+    background-color: #ffedd4;
+    border-radius: 0 50px 50px 0;
+    border: 1px solid #DAC7A5;
+    user-select: none;
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        li{
+            font-family: "Paperlogy", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #222;
+            cursor: pointer;
+            white-space: nowrap;
+            &:hover{
+                color: #999;
+                font-weight: bold;
+            }
+        }
+    }
+}

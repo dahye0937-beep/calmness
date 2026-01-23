@@ -1,0 +1,159 @@
+.about-site{
+    padding: 80px 0 140px;
+    user-select: none;
+}
+// 상단 타이틀
+.site-inner{
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    text-align: center;
+    .site-title{
+        font-family: "SuperMellow";
+        font-size: 100px;
+        font-weight: 400;
+        color: var(--text-title);
+        margin-bottom: 20px;
+    }
+    .site-desc{
+        font-family: "Paperlogy", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.6;
+        color: #222;
+    }
+}
+//카드 전체 레이아웃
+.site-card{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    margin-top: -12;
+}
+//왼쪽 텍스트
+.site-info{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+.site-card-title{
+    font-family: "Paperlogy", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+//사용한 도구 / Design System
+.card-desc{
+    font-family: "Paperlogy", sans-serif;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+.site-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    line-height: 1.5;
+    li{
+        font-family: "Paperlogy", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #888;
+    }
+}
+.site-icons{
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+    span{
+        width: 32px;
+        height: 32px;
+        display: inline-block;
+        cursor: pointer;
+    }
+}
+// //목업 이미지
+// .site-visual{
+//     flex: 1;
+//     display: flex;
+//     justify-content: flex-end;
+//     margin-top: 0;
+//     img{
+//         width: 100%;
+//         max-width: 700px;
+//         height: auto;
+//         display: block;
+//     }
+// }
+.site-system{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 8px;
+    line-height: 1.5;
+    li{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .system-color{
+        align-items: flex-start;
+    }
+    .color-chips{
+        display: flex;
+        gap: 8px;
+    }
+    .chip{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        position: relative;
+        &:hover{
+            transform: scale(1.08);
+        }
+        &::after{
+            content: attr(data-hex);
+            position: absolute;
+            bottom: -28px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #333;
+            background: #fff;
+            padding: 2px 6px;
+            border-radius: 6px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease;
+        }
+        &:hover::after{
+            opacity: 1;
+        }
+    }
+    //컬러 매핑
+    .bg-page{background-color: var(--bg--page);}
+    .bg-section{background-color: var(--bg--section);}
+    .bg-card{background-color: var(--bg--card);}
+    .accent-primary{background-color: var(--accent-primary);}
+    .accent-soft { background: var(--accent-soft); }
+    .text-title { background: var(--text-title); }
+    .system-title{
+        font-family: "Paperlogy", sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        color: #4d4c4c;
+    }
+    .system-desc{
+        font-family: "Paperlogy", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #888;
+    }
+}

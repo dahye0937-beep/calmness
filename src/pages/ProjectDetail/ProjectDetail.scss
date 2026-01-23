@@ -1,0 +1,59 @@
+.project-detail{
+    background-color: var(--bg-page);
+    padding: 120px 0 160px;
+}
+
+.detail-hero{
+    max-width: 1200px;
+    margin: 0 auto 120px;
+    .datail-tags{
+       font-family: "Paperlogy";
+       font-size: 15px;
+       font-weight: 600;
+       color: var(--accent-soft);
+       margin-bottom: 20px;
+    }
+    .detail-desc{
+        font-family: "Paperlogy";
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.6;
+        color: #222;
+        max-width: 900px;
+    }
+}
+
+.datail-body{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 80px;
+    align-items: center;
+}
+.detail-overview{
+    .project-title{
+        font-family: "SuperMellow";
+        font-size: 100px;
+        color: #423665;
+        line-height: 1;
+        margin-bottom: 24px;
+    }
+    .project-subtitle{
+        font-family: "Paperlogy";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.6;
+        color: var(--accent-soft);
+    }
+}
+.detail-visual{
+    border-radius: 50px;
+    border: 5px solid var(--accent-primary);
+    img{
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 50px;
+    }
+}
