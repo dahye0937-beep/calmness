@@ -18,6 +18,7 @@ const AboutSite = () => {
                 <li>React</li>
                 <li>Figma</li>
                 <li>SCSS</li>
+                <li>GSAP</li>
             </ul>
             <p className="card-desc">Design System</p>
             <ul className="site-system">
@@ -38,6 +39,7 @@ const AboutSite = () => {
                 </li>
                 <li>
                     <span className="system-title">UI Tone</span>
+                    <span className="system-desc">차분한 베이지 톤과 곡선을 활용하고 편안한 사용자 경험</span>
                 </li>
             </ul>
         </div>

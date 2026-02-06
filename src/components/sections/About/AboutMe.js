@@ -23,6 +23,7 @@ const AboutMe = () => {
         </p>
         <AboutSite />
     </section>
+    
   )
 }
 

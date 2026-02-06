@@ -4,9 +4,21 @@ import profileMain from "../../../assets/images/profile/profile-main.png"
 import profileIntro from "../../../assets/images/profile/profile-intro.png"
 import { FaGithub } from "react-icons/fa6";
 import {Figma, Photoshop, Illustrator, Html, Scss, Css, JavaScript, React, Git, GSAP,Supabase} from "../../../assets/images/icons";
-import Header from "../../layout/Header";
+import { IoIosMail } from "react-icons/io";
+import { useEffect } from "react";
+import gsap from "gsap";
 
 const Intro = () =>{
+    useEffect(() => {
+    gsap.to(".keyword", {
+    scale: 1.08,         
+    duration: 3,       
+    repeat: -1,          
+    yoyo: true,          
+    ease: "sine.inOut",  
+    stagger: 0
+    });
+}, []);
     return(
         <section className="intro">
             <div className="intro-wrapper">
@@ -18,17 +30,17 @@ const Intro = () =>{
                         <p className="role">Web Designer & Publisher</p>
                         <div className="contact">
                             <p className="contact-title">CONTACT</p>
-                            <ul>
+                            <ul className="contact-list">
                                 <li>
                                     <span className="icon">
-                                        <span className="emoji">📧</span> 
-                                        <span className="text">dahye0937@gmail.com</span>
+                                        <IoIosMail />
+                                        <a href="mailto:dahye0937@gmail.com" className="text">dahye0937@gmail.com</a>
                                     </span>
                                 </li>
                                 <li>
                                     <span className="icon">
                                         <FaGithub /> 
-                                        <span className="text">GitHub</span>
+                                        <a href="https://github.com/dahye0937-beep" className="text">GitHub</a>
                                     </span>
                                 </li>
                             </ul>
@@ -37,14 +49,14 @@ const Intro = () =>{
                 </aside>
                 {/* 오른쪽 카드 */}
                 <div className="intro-right">
-                    <Header />
-                    <header className="intro-header">
+                    <div className="intro-top-content">
+                        <hedader className="intro-header">
                         <h1 className="title">Clamness</h1>
                         <p className="desc">
                             구조와 흐름을 설계하는<br/>
                             웹 디자이너 & 퍼블리셔
                         </p>
-                    </header>
+                        </hedader>
                     {/* 키워드 프로필 */}
                     <div className="intro-keywords">
                         <img src={profileIntro} alt="키워드 프로필 사진" className="intro-avatar"/>
@@ -55,8 +67,9 @@ const Intro = () =>{
                         <span className="keyword k5">부드러움</span>
                         <span className="keyword k6">안정감</span>
                     </div>
+                    </div>
                     {/* 스킬 */}
-                    <section className="intro--skills">
+                    <div className="intro-skills">
                         <div className="skill-card">
                             <h4 className="skill-title">Design</h4>
                             <ul>
@@ -116,7 +129,7 @@ const Intro = () =>{
                                 </li>
                             </ul>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
         </section>

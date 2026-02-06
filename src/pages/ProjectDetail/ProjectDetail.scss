@@ -1,43 +1,66 @@
 .project-detail{
     background-color: var(--bg-page);
     padding: 120px 0 160px;
+    user-select: none;
+    .detail-intro-view{
+        max-width: 1200px;
+        margin: 0 auto 100px;
+        padding: 0 20px;
+    }
 }
-
 .detail-hero{
     max-width: 1200px;
-    margin: 0 auto 120px;
-    .datail-tags{
-       font-family: "Paperlogy";
-       font-size: 15px;
-       font-weight: 600;
-       color: var(--accent-soft);
-       margin-bottom: 20px;
+    margin: 0 auto 140px;
+    margin-bottom: 60px;
+    padding: 0 20px;
+    .detail-tags{
+        font-family: "Paperlogy";
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--accent-soft);
+        margin-bottom: 20px;
+        letter-spacing: 0.02em;
+        span{ margin-right: 15px; }
     }
     .detail-desc{
         font-family: "Paperlogy";
-        font-size: 22px;
+        font-size: 24px;
         font-weight: 700;
-        line-height: 1.6;
+        line-height: 1.7;
         color: #222;
-        max-width: 900px;
+        max-width: 820px;
     }
 }
 
-.datail-body{
+.detail-main{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
+    padding: 0 20px;
     display: grid;
-    grid-template-columns: 360px 1fr;
-    gap: 80px;
-    align-items: center;
+    grid-template-columns: 420px 1fr;
+    gap: 100px;
+    margin-bottom: 140px;
+    align-items: start;
 }
 .detail-overview{
+    .project-link {
+        text-decoration: none;
+        color: inherit;
+        display: inline-block;
+        background-color: transparent !important;
+    }
     .project-title{
-        font-family: "SuperMellow";
-        font-size: 100px;
+        font-family: "Azeret Mono";
+        font-size: 130px;
+        font-weight: 900;
         color: #423665;
         line-height: 1;
-        margin-bottom: 24px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.8;
+            background-color: transparent;
+        }
     }
     .project-subtitle{
         font-family: "Paperlogy";
@@ -48,12 +71,65 @@
     }
 }
 .detail-visual{
+    width: 100%;
+    height: 400px;
     border-radius: 50px;
     border: 5px solid var(--accent-primary);
+    overflow: hidden;
+    cursor: pointer;
     img{
         width: 100%;
-        height: auto;
+        height: 100%;
+    }
+    &:hover{
+        transform: translateY(-5px);
+        img{
+            filter: brightness(0.9);
+        }
+    }
+    a{
         display: block;
-        border-radius: 50px;
+        width: 100%;
+        height: 100%;
+    }
+}
+.detail-info{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    font-family: "Paperlogy";
+    color: var(--accent-soft);
+    .info-list{
+        li{
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            span{ display: block; margin-bottom: 5px;}
+        }
+    }
+    .point-list{
+        padding-left: 20px;
+        li{
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--accent-soft);
+            line-height: 1.5;
+            margin-bottom: 4px;
+        }
+    }
+    .detail-links{
+        margin-top: 40px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        a{
+            font-family: "Paperlogy";
+            font-size: 14px;
+            font-weight: 600;
+            color: #888;
+            text-decoration: underline;
+            &:hover { color: var(--accent-primary);}
+        }
     }
 }

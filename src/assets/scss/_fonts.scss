@@ -4,10 +4,18 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Paperlogy';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
+}
+
+@font-face {
+    font-family: "Azeret Mono";
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
 }
