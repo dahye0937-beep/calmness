@@ -1,3 +1,6 @@
+@use "../../assets/scss/mixins" as *;
+
+
 .project-detail{
     background-color: var(--bg-page);
     padding: 120px 0 160px;
@@ -132,4 +135,65 @@
             &:hover { color: var(--accent-primary);}
         }
     }
+}
+
+// 상세 페이지 섹션
+.detail-section{
+    max-width: 1200px;
+    margin: 140px auto;
+    padding: 60px;
+}
+.section-title{
+    color: #423665;
+    font-family: "Azeret Mono";
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+.detail-block{
+    margin-bottom: 60px;
+    h3{
+        font-family: "Paperlogy";
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+// logo
+.logo-area{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    .logo-images{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        img{
+            width: 100%;
+        }
+    }
+    .logo-desc{
+        font-family: "Paperlogy";
+        line-height: 1.7;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    // color
+    .color-palette{
+        @include flex-layout(row, flex-start, center, 20px);
+        flex-wrap: wrap;
+    }
+    .color-item{
+        // @include flex-layout(row, flex-start, center, 10px);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: "Paperlogy";
+        span {
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            display: inline-block;
+  }
+}
 }
