@@ -141,7 +141,7 @@
 .detail-section{
     max-width: 1200px;
     margin: 140px auto;
-    padding: 60px;
+    padding: 60px;;
 }
 .section-title{
     color: #423665;
@@ -156,7 +156,15 @@
         font-family: "Paperlogy";
         font-size: 20px;
         font-weight: 700;
+        margin-bottom: 20px;
     }
+}
+hr{
+    margin: 20px;
+    width: 1000px;
+    height: 5px;
+    background-color: #D7D5D5;
+    border: none;
 }
 // logo
 .logo-area{
@@ -177,23 +185,179 @@
         font-size: 20px;
         font-weight: 400;
     }
-
-    // color
-    .color-palette{
-        @include flex-layout(row, flex-start, center, 20px);
-        flex-wrap: wrap;
+}
+//color
+.color-area{
+    padding: 15px;
+    display: flex;
+    gap: 40px;
+    .color-group{
+        display: flex;
+        flex-direction: column;
+        font-family: "Paperlogy";
+        font-weight: 600;
+        gap: 15px;
     }
     .color-item{
-        // @include flex-layout(row, flex-start, center, 10px);
         display: flex;
         align-items: center;
-        gap: 10px;
-        font-family: "Paperlogy";
-        span {
-            width: 28px;
-            height: 28px;
-            border-radius: 6px;
-            display: inline-block;
-  }
+        gap: 12px;
+        .color-box{
+            width: 70px;
+            height: 40px;
+            border-radius: 30px;
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .hover-hex{
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                font-size: 12px;
+                color: #fff;
+                font-weight: bold;
+                background: rgba(0, 0, 0, 0.4);
+                padding: 2px 4px;
+                border-radius: 4px;
+                pointer-events: none;
+            }
+            &:hover .hover-hex{
+                opacity: 1;
+            }
+        }
+        .color-name{
+            font-size: 14px;
+            color: #222;
+        }
+    }
 }
+
+//UX Startegy
+.ux-text{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    font-family: "Paperlogy";
+    li{
+        list-style: disc;
+        font-weight: 600;
+        margin-bottom: 6px;
+        padding: 10px;
+    }
+    p{
+        margin: 0;
+        line-height: 1.6;
+    }
+}
+
+// User Context
+.user-area{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    font-family: "Paperlogy";
+    .user-item{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .user-image{
+            flex: 1;
+            img { 
+                width: 100%; 
+                border-radius: 15px;
+                border: 5px solid var(--accent-primary);
+            }
+        }
+        .user-text{
+            flex: 1;
+            .badge{
+                display: inline-block;
+                padding: 4px 12px;
+                border-radius: 20px;
+                color: #fff;
+                font-weight: bold;
+                margin-bottom: 15px;
+                &.resident{ background-color: #423665;}
+                &.store{ background-color: #FF7C1F;}
+                &.admin{ background-color: #5BB299;}
+            }
+            ul{
+                list-style: disc;
+                padding-left: 20px;
+                li{
+                    margin-bottom: 8px;
+                    line-height: 1.6;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+//User Flow
+.flow-area{
+    img{
+        width: 100%;
+        border-radius: 15px;
+        border: 5px solid var(--accent-primary);
+    }
+}
+
+// My Role & Tech Stack
+.role-stack-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 40px 0;
+    .role-area, .stack-area{
+        flex: 1;
+        .sub-title{
+            font-family: "Paperlogy";
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        ul{
+            li{
+                font-family: "Paperlogy";
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 1.8;
+                list-style: disc;
+            }
+        }
+    }
+}
+
+// Trouble Shooting
+.trouble-area{
+    .trouble-title{
+        font-family: "Paperlogy";
+        font-size: 20px;
+        font-weight: 700;
+        margin: 30px 0 20px;
+    }
+    .trouble-list{
+        li{
+            margin-bottom: 25px;
+            list-style: none;
+            strong{
+                display: block;
+                font-family: "Paperlogy";
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            p{
+                font-family: "Paperlogy";
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 1.6;
+                word-break: keep-all;
+            }
+        }
+    }
 }
