@@ -1,22 +1,22 @@
 @use "../../assets/scss/mixins" as *;
 
 
-.project-detail{
+.stay{
     background-color: var(--bg-page);
     padding: 120px 0 160px;
     user-select: none;
-    .detail-intro-view{
+    .stay-intro-view{
         max-width: 1200px;
         margin: 0 auto 100px;
         padding: 0 20px;
     }
 }
-.detail-hero{
+.stay-hero{
     max-width: 1200px;
     margin: 0 auto 140px;
     margin-bottom: 60px;
     padding: 0 20px;
-    .detail-tags{
+    .stay-tags{
         font-family: "Paperlogy";
         font-size: 16px;
         font-weight: 600;
@@ -25,7 +25,7 @@
         letter-spacing: 0.02em;
         span{ margin-right: 15px; }
     }
-    .detail-desc{
+    .stay-desc{
         font-family: "Paperlogy";
         font-size: 24px;
         font-weight: 700;
@@ -35,7 +35,7 @@
     }
 }
 
-.detail-main{
+.stay-main{
     max-width: 1200px;
     margin: 0 auto 60px;
     padding: 0 20px;
@@ -45,14 +45,14 @@
     margin-bottom: 140px;
     align-items: start;
 }
-.detail-overview{
-    .project-link {
+.stay-overview{
+    .stay-link {
         text-decoration: none;
         color: inherit;
         display: inline-block;
         background-color: transparent !important;
     }
-    .project-title{
+    .stay-title{
         font-family: "Azeret Mono";
         font-size: 130px;
         font-weight: 900;
@@ -65,7 +65,7 @@
             background-color: transparent;
         }
     }
-    .project-subtitle{
+    .stay-subtitle{
         font-family: "Paperlogy";
         font-weight: 700;
         font-size: 20px;
@@ -73,7 +73,7 @@
         color: var(--accent-soft);
     }
 }
-.detail-visual{
+.stay-visual{
     width: 100%;
     height: 400px;
     border-radius: 50px;
@@ -96,7 +96,7 @@
         height: 100%;
     }
 }
-.detail-info{
+.stay-info{
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 20px;
@@ -121,7 +121,7 @@
             margin-bottom: 4px;
         }
     }
-    .detail-links{
+    .stay-links{
         margin-top: 40px;
         display: flex;
         justify-content: flex-end;
@@ -138,7 +138,7 @@
 }
 
 // 상세 페이지 섹션
-.detail-section{
+.stay-section{
     max-width: 1200px;
     margin: 140px auto;
     padding: 60px;;
@@ -150,7 +150,7 @@
     font-weight: 900;
     margin-bottom: 40px;
 }
-.detail-block{
+.stay-block{
     margin-bottom: 60px;
     h3{
         font-family: "Paperlogy";

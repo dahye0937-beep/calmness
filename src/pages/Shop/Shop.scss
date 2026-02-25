@@ -1,0 +1,28 @@
+@use "../../assets/scss/mixins" as *;
+
+
+.shop{
+    background-color: var(--bg-page);
+    padding: 120px 0 160px;
+    user-select: none;
+    .shop-intro-view{
+        max-width: 1200px;
+        margin: 0 auto 100px;
+        padding: 0 20px;
+    }
+}
+.shop-hero{
+    max-width: 1200px;
+    margin: 0 auto 140px;
+    margin-bottom: 60px;
+    padding: 0 20px;
+    .shop-tags{
+        font-family: "Paperlogy";
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--accent-soft);
+        margin-bottom: 20px;
+        letter-spacing: 0.02em;
+        span{ margin-right: 15px; }
+    }
+}

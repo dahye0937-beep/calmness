@@ -9,4 +9,4 @@ const ProjectFilter = () => {
   )
 }
 
-export default ProjectFilter
+export default ProjectFilter;

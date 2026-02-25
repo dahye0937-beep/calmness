@@ -1,4 +1,4 @@
-import "./ProjectDetail.scss";
+import "./Stay.scss";
 import STAY from "../../assets/images/projects/stay.png";
 import logo1 from "../../assets/images/projects/stay-logo.png";
 import apt from "../../assets/images/projects/apt.png";
@@ -6,19 +6,19 @@ import store from "../../assets/images/projects/store.png";
 import admin from "../../assets/images/projects/admin.png";
 import StayFlow from "../../assets/images/projects/stay-flow.png";
 
-const ProjectDetail = () => {
+const Stay = () => {
   return (
-    <div className="project-detail">
+    <div className="stay">
       {/* 키워드 */}
-      <section className="detail-intro-view">
-        <div className="detail-hero">
-          <div className="detail-tags">
+      <section className="stay-intro-view">
+        <div className="stay-hero">
+          <div className="stay-tags">
             <span>#ParkingService</span>
             <span>#RoleBasedUI</span>
             <span>#RealtimeUI</span>
             <span>#UserFlow</span>
           </div>
-          <p className="detail-desc">
+          <p className="stay-desc">
             입주민·사업자·관리자· 역할 기반 UI와 주차 현황·차량 등록 기능을
             중심으로, <br />
             Supabase를 활용해 실제 서비스 흐름을 구현한 주차 관리 시스템
@@ -26,15 +26,15 @@ const ProjectDetail = () => {
           </p>
         </div>
         {/* 프로젝트 소개 */}
-        <div className="detail-main">
-          <div className="detail-overview">
+        <div className="stay-main">
+          <div className="stay-overview">
             <a
               href="https://github.com/dahye0937-beep/stay-main.git"
               target="_blank"
               rel="noreferrer"
-              className="project-link"
+              className="stay-link"
             >
-              <h2 className="project-title">STAY</h2>
+              <h2 className="stay-title">STAY</h2>
             </a>
             <p className="project-subtitle">
               주차 상황을 실시간으로 관리하는 <br />
@@ -42,7 +42,7 @@ const ProjectDetail = () => {
             </p>
           </div>
           {/* 목업 이미지 */}
-          <div className="detail-visual">
+          <div className="stay-visual">
             <a
               href="https://dahye0937-beep.github.io/stay-main/"
               target="_blank"
@@ -53,7 +53,7 @@ const ProjectDetail = () => {
           </div>
         </div>
         {/* 하단 상세 정보 */}
-        <div className="detail-info">
+        <div className="stay-info">
           <ul className="info-list">
             <li>① 작업 기간 : 2026.01.02 ~ 2026.01.13 (8일)</li>
             <li>② 참여 인원 : 6인 팀 프로젝트</li>
@@ -68,10 +68,10 @@ const ProjectDetail = () => {
           </ul>
         </div>
       </section>
-      <section className="detail-section">
+      <section className="stay-section">
         <h2 className="section-title">STAY</h2>
         {/* logo */}
-        <div className="detail-block">
+        <div className="stay-block">
           <h3>Logo</h3>
           <div className="logo-area">
             <div className="logo-images">
@@ -93,7 +93,7 @@ const ProjectDetail = () => {
         </div>
         <hr />
         {/* color */}
-        <div className="detail-block">
+        <div className="stay-block">
           <h3> Color </h3>
           <div className="color-area">
             <div className="color-group">
@@ -151,7 +151,7 @@ const ProjectDetail = () => {
         </div>
         <hr />
         {/* UX Startegy */}
-        <div className="detail-block">
+        <div className="stay-block">
           <h3> UX Startegy </h3>
           <div className="ux-area">
             <ul className="ux-text">
@@ -183,7 +183,7 @@ const ProjectDetail = () => {
         </div>
         <hr />
         {/* User Context */}
-        <div className="detail-block">
+        <div className="stay-block">
           <h3>User Context</h3>
           <div className="user-area">
             {/* 입주민 */}
@@ -229,7 +229,7 @@ const ProjectDetail = () => {
         </div>
         <hr />
         {/* User Flow */}
-        <div className="detail-block">
+        <div className="stay-block">
           <h3>User Flow</h3>
           <div className="flow-area">
             <img src={StayFlow} alt="stay 사용자 플로우" />
@@ -237,7 +237,7 @@ const ProjectDetail = () => {
         </div>
         <hr />
         {/* Role & Tech Stack */}
-        <div className="detail-block">
+        <div className="stay-block">
           <div className="role-stack-container">
             {/* My Role */}
             <div className="role-area">
@@ -263,7 +263,7 @@ const ProjectDetail = () => {
         </div>
         <hr />
         {/* Trouble Shooting */}
-        <div className="detail-block">
+        <div className="stay-block">
           <h3 className="section-sub-title">프로젝트를 마무리 하며</h3>
           <div className="trouble-area">
             <h4 className="trouble-title">Trouble Shooting</h4>
@@ -304,4 +304,4 @@ const ProjectDetail = () => {
   );
 };
 
-export default ProjectDetail;
+export default Stay;

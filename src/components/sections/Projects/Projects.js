@@ -20,8 +20,7 @@ const Projects = () => {
         <li>All</li>
         <li className="active">Team</li>
         <li>Clone</li>
-        <li>Personal</li>
-        <li>Practical</li>
+        <li>Projects</li>
       </ul>
 
       {/* 카드 리스트 */}
